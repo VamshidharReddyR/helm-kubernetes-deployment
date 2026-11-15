@@ -21,3 +21,7 @@ resources:
 ingress:
   enabled: true
   host: myapp.example.com
+
+config:
+  appEnv: production
+  appVersion: v1.0.0

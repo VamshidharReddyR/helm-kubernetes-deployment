@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: {{ .Chart.Name }}-config
+
+data:
+  APP_ENV: {{ .Values.config.appEnv | quote }}
+  APP_VERSION: {{ .Values.config.appVersion | quote }}

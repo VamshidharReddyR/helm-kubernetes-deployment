@@ -25,3 +25,8 @@ ingress:
 config:
   appEnv: production
   appVersion: v1.0.0
+
+hpa:
+  minReplicas: 2
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 70
